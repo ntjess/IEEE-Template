@@ -1,0 +1,63 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx, float}
+% Silence caption warning
+\usepackage{support-caption}
+\usepackage{subcaption}
+\usepackage{array}
+
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{soul}
+\usepackage{alphalph}
+\usepackage{ragged2e}
+\usepackage{hyperref}
+
+
+\newcommand{\comment}[1]{}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\usepackage[backend=biber,sorting=none,doi=false,isbn=false,url=false,eprint=false,style=ieee]{biblatex}
+\addbibresource{references.bib}
+
+\input{figures/makefigs}
+
+\title{Title Here}
+
+\author{
+\IEEEauthorblockN{
+\\}
+
+\IEEEauthorblockA{
+Electrical and Computer Engineering Department, University of Florida\\
+Gainesville, FL, USA\\
+Email: \{njessurun,\}@ufl.edu\\}}
+
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\begin{IEEEkeywords}
+
+\end{IEEEkeywords}
+
+\input{sections/intro}
+\input{sections/methods}
+\input{sections/results_discussion}
+\input{sections/conclusion}
+
+{% Uncomment below to suppress badness warnings from bibliography by using ragged right
+%\RaggedRight
+\printbibliography
+}
+\end{document}
